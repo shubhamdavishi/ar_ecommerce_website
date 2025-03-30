@@ -36,7 +36,6 @@ const CartPage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar />
       <div style={styles.content}>
         <h1>Shopping Cart</h1>
         <div style={styles.cartContainer}>
@@ -65,7 +64,6 @@ const CartPage = () => {
           <h3>Total: ${calculateTotal()}</h3>
         </div>
       </div>
-      <Footer />
       <NotificationToast
         show={showToast}
         onClose={() => setShowToast(false)}

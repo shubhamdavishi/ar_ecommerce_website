@@ -24,7 +24,7 @@ const OrdersPage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar />
+     
       <div style={styles.content}>
         <h1>My Orders</h1>
         <div style={styles.ordersContainer}>
@@ -44,7 +44,7 @@ const OrdersPage = () => {
           ))}
         </div>
       </div>
-      <Footer />
+
       <NotificationToast
         show={showToast}
         onClose={() => setShowToast(false)}

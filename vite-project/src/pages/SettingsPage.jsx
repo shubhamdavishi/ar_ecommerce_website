@@ -23,7 +23,7 @@ const SettingsPage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar />
+    
       <div style={styles.content}>
         <h1>Settings</h1>
         <div style={styles.settingsContainer}>
@@ -53,7 +53,6 @@ const SettingsPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
       <NotificationToast
         show={showToast}
         onClose={() => setShowToast(false)}

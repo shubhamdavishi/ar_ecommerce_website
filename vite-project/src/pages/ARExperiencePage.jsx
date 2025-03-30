@@ -1,23 +1,22 @@
+
+
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProductARViewer from "../components/ProductARViewer";
 import NotificationToast from "../components/NotificationToast";
+import ProductARViewer from "../components/ProductARViewer";
 
 const ARExperiencePage = () => {
-  const [selectedProduct, setSelectedProduct] = useState(null);
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const handleProductSelect = (product) => {
-    setSelectedProduct(product);
-    setToastMessage("${product.name} loaded in AR viewer.");
+    setToastMessage(`${product.name} loaded in AR viewer.`);
     setShowToast(true);
+    setSelectedProduct(product);
   };
 
   return (
     <div style={styles.container}>
-      <Navbar />
       <div style={styles.content}>
         <h1>Augmented Reality Experience</h1>
         <p>Select a product to view it in AR.</p>
@@ -44,9 +43,8 @@ const ARExperiencePage = () => {
             </button>
           ))}
         </div>
-        {selectedProduct && <ProductARViewer product={selectedProduct} />}
       </div>
-      <Footer />
+      <ProductARViewer product={selectedProduct} />
       <NotificationToast
         show={showToast}
         onClose={() => setShowToast(false)}
@@ -67,7 +65,7 @@ const styles = {
     padding: "40px",
     textAlign: "center",
     maxWidth: "800px",
-    margin: "0 auto",
+    margin: "auto",
     color: "#333",
   },
   productList: {
@@ -78,11 +76,11 @@ const styles = {
   },
   productButton: {
     backgroundColor: "#4A90E2",
-    color: "#fff",
-    padding: "10px 15px",
+    padding: "18px 15px",
     border: "none",
     borderRadius: "8px",
     cursor: "pointer",
+    color: "#fff",
   },
 };
 

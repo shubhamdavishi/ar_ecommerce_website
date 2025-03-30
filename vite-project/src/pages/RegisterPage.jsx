@@ -46,7 +46,7 @@ const RegisterPage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar />
+    
       <div style={styles.content}>
         <h1>Register</h1>
         <form onSubmit={handleSubmit} style={styles.form}>
@@ -91,7 +91,7 @@ const RegisterPage = () => {
           </button>
         </form>
       </div>
-      <Footer />
+     
       <NotificationToast
         show={showToast}
         onClose={() => setShowToast(false)}

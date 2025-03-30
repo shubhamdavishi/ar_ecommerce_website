@@ -7,7 +7,7 @@ import NotificationToast from "../components/NotificationToast";
 const DashboardPage = () => {
   return (
     <div style={styles.container}>
-      <Navbar />
+     
       <div style={styles.content}>
         <h1>Dashboard</h1>
         <p>
@@ -27,7 +27,6 @@ const DashboardPage = () => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

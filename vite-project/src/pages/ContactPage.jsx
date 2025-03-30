@@ -25,7 +25,6 @@ const ContactPage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar />
       <div style={styles.content}>
         <h1>Contact Us</h1>
         <p>Have questions or feedback? Reach out to us below!</p>
@@ -61,7 +60,6 @@ const ContactPage = () => {
           </button>
         </form>
       </div>
-      <Footer />
       <NotificationToast
         show={showToast}
         onClose={() => setShowToast(false)}

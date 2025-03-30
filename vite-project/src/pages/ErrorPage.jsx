@@ -8,7 +8,7 @@ const ErrorPage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar />
+    
       <div style={styles.content}>
         <h1>404 - Page Not Found</h1>
         <p>Oops! The page you are looking for does not exist.</p>
@@ -16,7 +16,7 @@ const ErrorPage = () => {
           Go to Home
         </button>
       </div>
-      <Footer />
+      
     </div>
   );
 };

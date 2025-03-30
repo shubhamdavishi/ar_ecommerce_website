@@ -27,7 +27,7 @@ const ProfilePage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar />
+   
       <div style={styles.content}>
         <h1>My Profile</h1>
         <div style={styles.profileCard}>
@@ -71,7 +71,7 @@ const ProfilePage = () => {
           )}
         </div>
       </div>
-      <Footer />
+     
       <NotificationToast
         show={showToast}
         onClose={() => setShowToast(false)}

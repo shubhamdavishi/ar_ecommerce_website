@@ -28,7 +28,7 @@ const LoginPage = () => {
 
   return (
     <div style={styles.container}>
-      <Navbar />
+     
       <div style={styles.content}>
         <h1>Login</h1>
         <form onSubmit={handleLogin} style={styles.form}>
@@ -53,7 +53,7 @@ const LoginPage = () => {
           </button>
         </form>
       </div>
-      <Footer />
+   
       <NotificationToast
         show={showToast}
         onClose={() => setShowToast(false)}
